@@ -37,18 +37,11 @@ randomstring({
 });
 // >> "accbaabbbbcccbccccaacacbbcbbcbbc"
 
-randomstring({
-  charset: 'abc'
-}, cb);
-// >> "cb(generatedString) {}"
-
 ```
 
 ## API
 
-`randomstring.`
-
-- `generate(options, cb)`
+`randomstring(options)`
   - `options`
     - `length` - the length of the random string. (default: 32) [OPTIONAL]
     - `readable` - exclude poorly readable chars: 0OIl. (default: false) [OPTIONAL]
@@ -60,23 +53,23 @@ randomstring({
       - `binary` - [01]
       - `octal` - [0-7]
       - `custom` - any given characters
-    - `capitalization` - define whether the output should be lowercase / uppercase only. (default: null) [OPTIONAL]
+    - `capitalization` - [OPTIONAL] define whether the output should be lowercase / uppercase only. (default: null)
       - `lowercase`
       - `uppercase`
-  - `cb` - Optional.  If provided uses async version of `crypto.randombytes`
 
 ## Command Line Usage
-Use any of the following in you CLI `randomstring <options>` `random-string <options>` `random-string-gen <options>` `random-string-generator <options>`.
-
-You need to install globally with 
+You need to install globally with:
 
 ```
-npm install random-string-generator
+npm install -g random-string-generator
 ```
+
+Use any of the following in you CLI (they will perform the same way)
+`randomstring <options>`, `random-string <options>`, `random-string-gen <options>`, `random-string-generator <options>`.
 
 See Examples below:
 
-```console
+```
   $ randomstring
   > sKCx49VgtHZ59bJOTLcU0Gr06ogUnDJi
 
