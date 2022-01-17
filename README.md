@@ -1,40 +1,43 @@
-# node-randomstring
+# random-string-generator
 
-[![Build Status](https://travis-ci.org/klughammer/node-randomstring.svg?branch=master)](https://travis-ci.org/klughammer/node-randomstring) [![Download Stats](https://img.shields.io/npm/dm/randomstring.svg)](https://github.com/klughammer/node-randomstring)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator) [![Download Stats](https://img.shields.io/badge/downloads-1.2M/month-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator)
 
 Library to help you create random strings.
 
 ## Installation
 
-To install randomstring, use [npm](http://github.com/npm/npm):
+To install random-string-generator, use [npm](http://github.com/npm/npm):
 
 ```
-npm install randomstring
+npm install random-string-generator
 ```
 
 ## Usage
 
 ```javascript
-var randomstring = require("randomstring");
+var randomstring = require("random-string-generator");
 
-randomstring.generate();
+randomstring();
 // >> "XwPp9xazJ0ku5CZnlmgAx2Dld8SHkAeT"
 
-randomstring.generate(7);
+randomstring(7);
 // >> "xqm5wXX"
 
-randomstring.generate({
+randomstring('abc');
+// >> "acbbbbccabbccabbbcabcbaccccbacbb"
+
+randomstring({
   length: 12,
   charset: 'alphabetic'
 });
 // >> "AqoTIzKurxJi"
 
-randomstring.generate({
+randomstring({
   charset: 'abc'
 });
 // >> "accbaabbbbcccbccccaacacbbcbbcbbc"
 
-randomstring.generate({
+randomstring({
   charset: 'abc'
 }, cb);
 // >> "cb(generatedString) {}"
@@ -63,17 +66,26 @@ randomstring.generate({
   - `cb` - Optional.  If provided uses async version of `crypto.randombytes`
 
 ## Command Line Usage
+Use any of the following in you CLI `randomstring <options>` `random-string <options>` `random-string-gen <options>` `random-string-generator <options>`.
 
-    $ npm install -g randomstring
+You need to install globally with 
 
-    $ randomstring
-    > sKCx49VgtHZ59bJOTLcU0Gr06ogUnDJi
+```
+npm install random-string-generator
+```
 
-    $ randomstring 7
-    > CpMg433
+See Examples below:
 
-    $ randomstring length=24 charset=github readable
-    > hthbtgiguihgbuttuutubugg
+```console
+  $ randomstring
+  > sKCx49VgtHZ59bJOTLcU0Gr06ogUnDJi
+
+  $ randomstring 7
+  > CpMg433
+
+  $ random-string-gen length=24 charset=github readable
+  > hthbtgiguihgbuttuutubugg
+```
 
 ## Tests
 
@@ -84,4 +96,4 @@ npm test
 
 ## LICENSE
 
-node-randomstring is licensed under the MIT license.
+random-string-generator is licensed under the MIT license.
