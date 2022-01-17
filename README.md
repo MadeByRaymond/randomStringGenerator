@@ -2,7 +2,8 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator) [![Download Stats](https://img.shields.io/badge/downloads-1.2M/month-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator)
 
-Library to help you create random strings.
+Library to help you create random strings in your code and in CLI.
+Can be useful for creating an identifier (id), slug, salt, PIN code, fixture, etc.
 
 ## Installation
 
@@ -65,6 +66,7 @@ npm install -g random-string-generator
 ```
 
 Use any of the following in you CLI (they will perform the same way)
+
 `randomstring <options>`, `random-string <options>`, `random-string-gen <options>`, `random-string-generator <options>`.
 
 See Examples below:
