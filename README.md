@@ -7,7 +7,7 @@ Can be useful for creating an identifier (id), slug, salt, PIN code, fixture, et
 
 ## Installation
 
-To install random-string-generator, use [npm](http://github.com/npm/npm):
+To install random-string-generator, use [npm](http://github.com/npm/cli):
 
 ```
 npm install random-string-generator
@@ -19,24 +19,24 @@ npm install random-string-generator
 var randomstring = require("random-string-generator");
 
 randomstring();
-// >> "XwPp9xazJ0ku5CZnlmgAx2Dld8SHkAeT"
+// >> "rDqXcpQ82H0xZEWXAInfRjJKPVQFXshW"
 
 randomstring(7);
-// >> "xqm5wXX"
+// >> "qn7w9jm"
 
 randomstring('abc');
-// >> "acbbbbccabbccabbbcabcbaccccbacbb"
+// >> "baccaaababaabbccbaacbabcbabbbcba"
 
 randomstring({
   length: 12,
-  charset: 'alphabetic'
+  type: 'alphabetic'
 });
-// >> "AqoTIzKurxJi"
+// >> "pYqOzqOxnLHZ"
 
 randomstring({
   charset: 'abc'
 });
-// >> "accbaabbbbcccbccccaacacbbcbbcbbc"
+// >> "aacacbcabcbbabcbccacacbbabcacabc"
 
 ```
 
@@ -45,16 +45,15 @@ randomstring({
 `randomstring(options)`
   - `options`
     - `length` - the length of the random string. (default: 32) [OPTIONAL]
-    - `readable` - exclude poorly readable chars: 0OIl. (default: false) [OPTIONAL]
-    - `charset` - define the character set for the string. (default: 'alphanumeric') [OPTIONAL]
+    - `type` - define the character set for the string. (default: 'alphanumeric') [OPTIONAL]
       - `alphanumeric` - [0-9 a-z A-Z]
       - `alphabetic` - [a-z A-Z]
       - `numeric` - [0-9]
       - `hex` - [0-9 a-f]
       - `binary` - [01]
       - `octal` - [0-7]
-      - `custom` - any given characters
-    - `capitalization` - [OPTIONAL] define whether the output should be lowercase / uppercase only. (default: null)
+    - `charset` - define a custom character set to use. This overrides whatever `type` is set. (default: '') [OPTIONAL]
+    - `capitalization` - define whether the output should be lowercase / uppercase only. Ignore this option to use both (default: null) [OPTIONAL]
       - `lowercase`
       - `uppercase`
 
@@ -73,13 +72,13 @@ See Examples below:
 
 ```
   $ randomstring
-  > sKCx49VgtHZ59bJOTLcU0Gr06ogUnDJi
+  > 3hXyYxyBbg4tcH5wWqpeIM8Pbk38mQTk
 
-  $ randomstring 7
-  > CpMg433
+  $ randomstring 8
+  > WXEj5Nm3
 
-  $ random-string-gen length=24 charset=github readable
-  > hthbtgiguihgbuttuutubugg
+  $ random-string-gen length=16 charset=javascript
+  > ivrapaavsjaricvt
 ```
 
 ## Tests
