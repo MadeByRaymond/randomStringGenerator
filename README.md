@@ -59,7 +59,7 @@ randomstring({
       - `hex` - [0-9 a-f]
       - `binary` - [01]
       - `octal` - [0-7]
-      - `ascii-printable` - [0-7 a-z A-Z !"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ ] see [here](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters){:target="\_blank"}
+      - `ascii-printable` - [0-7 a-z A-Z !"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ ] see [here](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
     - `charset` - define a custom character set to use. This overrides whatever `type` is set. (default: '') [OPTIONAL]
     - `capitalization` - define whether the output should be lowercase / uppercase only. Ignore this option to use both (default: null) [OPTIONAL]
       - `lowercase`
