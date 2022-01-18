@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator) [![Download Stats](https://img.shields.io/badge/downloads-1.2M/month-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator)
 
 A Library to help you create random strings in your code and in CLI.
-Can be useful for creating an identifier (id), slug, salt, PIN code, fixture, etc.
+Can be useful for creating an identifier (id), slug, salt, PIN code, strong passwords, fixture, etc.
 
 ## Installation
 
@@ -59,6 +59,7 @@ randomstring({
       - `hex` - [0-9 a-f]
       - `binary` - [01]
       - `octal` - [0-7]
+      - `ascii-printable` - [0-7 a-z A-Z !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ ] see [here](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
     - `charset` - define a custom character set to use. This overrides whatever `type` is set. (default: '') [OPTIONAL]
     - `capitalization` - define whether the output should be lowercase / uppercase only. Ignore this option to use both (default: null) [OPTIONAL]
       - `lowercase`
