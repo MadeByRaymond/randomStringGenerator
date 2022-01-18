@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator) [![Download Stats](https://img.shields.io/badge/downloads-1.2M/month-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator)
 
-Library to help you create random strings in your code and in CLI.
+A Library to help you create random strings in your code and in CLI.
 Can be useful for creating an identifier (id), slug, salt, PIN code, fixture, etc.
 
 ## Installation
@@ -37,6 +37,13 @@ randomstring({
   charset: 'abc'
 });
 // >> "aacacbcabcbbabcbccacacbbabcacabc"
+
+randomstring({
+  length: 16,
+  charset: 'javascript',
+  capitalization: 'uppercase'
+});
+// >> "SCRVJSSIIASAJSAP"
 
 ```
 
