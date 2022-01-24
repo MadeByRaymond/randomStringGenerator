@@ -1,0 +1,51 @@
+{
+  "name": "random-string-gen",
+  "version": "1.1.2",
+  "description": "A simple module for generating random strings in your code and in CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "prepublish": "npm test"
+  },
+  "bin": {
+    "randomstring": "bin/index.js",
+    "random-string": "bin/index.js",
+    "random-string-gen": "bin/index.js",
+    "random-string-generator": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadeByRaymond/randomStringGenerator.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [
+    "random",
+    "rand",
+    "string",
+    "text",
+    "unique",
+    "id",
+    "identifier",
+    "password",
+    "pin",
+    "slug",
+    "generator",
+    "gen",
+    "hex",
+    "octal",
+    "ascii",
+    "binary"
+  ],
+  "author": "Raymond Obiekwe <madebyraymond@gmail.com> (http://madebyraymond.herokuapp.com/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MadeByRaymond/randomStringGenerator/issues"
+  },
+  "homepage": "https://github.com/MadeByRaymond/randomStringGenerator#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "yargs": "^17.3.1"
+  }
+}

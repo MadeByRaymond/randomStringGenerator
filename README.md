@@ -1,4 +1,4 @@
-# random-string-generator
+# random-string-gen
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator) [![Download Stats](https://img.shields.io/badge/downloads-1.2M/month-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator)
 
@@ -7,16 +7,16 @@ Can be useful for creating an identifier (id), slug, salt, PIN code, strong pass
 
 ## Installation
 
-To install random-string-generator, use [npm](http://github.com/npm/cli):
+To install random-string-gen, use [npm](http://github.com/npm/cli):
 
 ```
-npm install random-string-generator
+npm install random-string-gen
 ```
 
 ## Usage
 
 ```javascript
-var randomstring = require("random-string-generator");
+var randomstring = require("random-string-gen");
 
 randomstring();
 // >> "rDqXcpQ82H0xZEWXAInfRjJKPVQFXshW"
@@ -59,9 +59,9 @@ randomstring({
       - `hex` - [0-9 a-f]
       - `binary` - [01]
       - `octal` - [0-7]
-      - `ascii-printable` - [0-7 a-z A-Z !"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ ] see [here](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
+      - `ascii-printable` - [0-7 a-z A-Z !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ ] see [here](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
     - `charset` - define a custom character set to use. This overrides whatever `type` is set. (default: '') [OPTIONAL]
-    - `capitalization` - define whether the output should be lowercase / uppercase only. Ignore this option to use both (default: null) [OPTIONAL]
+    - `capitalization` - define whether the output should be lowercase / uppercase only. Ignore this option to return both in the string (default: null) [OPTIONAL]
       - `lowercase`
       - `uppercase`
 
@@ -69,7 +69,7 @@ randomstring({
 You need to install globally with:
 
 ```
-npm install -g random-string-generator
+npm install -g random-string-gen
 ```
 
 Use any of the following in you CLI (they will perform the same way)
@@ -98,4 +98,4 @@ npm test
 
 ## LICENSE
 
-random-string-generator is licensed under the MIT license.
+random-string-gen is licensed under the MIT license.
