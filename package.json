@@ -1,6 +1,6 @@
 {
   "name": "random-string-gen",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A simple module for generating random strings in your code and in CLI",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MadeByRaymond/randomStringGenerator.git"
+  },
+  "publishConfig": {
+    "@madebyraymond:registry":"https://npm.pkg.github.com"
   },
   "engines": {
     "node": "*"
