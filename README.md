@@ -1,11 +1,15 @@
 # random-string-gen
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator) [![Download Stats](https://img.shields.io/badge/downloads-1.2M/month-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator)
+![npm](https://img.shields.io/npm/v/random-string-gen)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/MadeByRaymond/randomStringGenerator) 
+![NPM Downloads](https://img.shields.io/npm/d18m/random-string-gen)
+![License](https://img.shields.io/npm/l/random-string-gen)
+
 
 A Library to help you create random strings in your code and in CLI.
 Can be useful for creating an identifier (id), slug, salt, PIN code, strong passwords, fixture, etc.
 
-## Installation
+## 📦 Installation
 
 To install random-string-gen, use [npm](http://github.com/npm/cli):
 
@@ -13,7 +17,7 @@ To install random-string-gen, use [npm](http://github.com/npm/cli):
 npm install random-string-gen
 ```
 
-## Usage
+## 🧠 Usage
 
 ```javascript
 var randomstring = require("random-string-gen");
@@ -47,7 +51,7 @@ randomstring({
 
 ```
 
-## API
+## 🔑 API
 
 `randomstring(options)`
   - `options`
@@ -65,7 +69,7 @@ randomstring({
       - `lowercase`
       - `uppercase`
 
-## Command Line Usage
+## ⚙️ Command Line Usage
 You need to install globally with:
 
 ```
@@ -89,13 +93,22 @@ See Examples below:
   > ivrapaavsjaricvt
 ```
 
-## Tests
+## 🧪 Tests
 
 ```
 npm install
 npm test
 ```
 
-## LICENSE
+## 🔒 LICENSE
 
-random-string-gen is licensed under the MIT license.
+`random-string-gen` is licensed under the MIT license. © MadeByRaymond (Daniel Obiekwe).
+
+---
+
+## ❤️ Support
+
+If you find this package helpful, you can support our projects here:
+
+[![Buy Me a Smoothie](https://img.buymeacoffee.com/button-api/?text=Buy%20Me%20a%20Smoothie&emoji=🍹&slug=MadeByRaymond&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/MadeByRaymond)
+
